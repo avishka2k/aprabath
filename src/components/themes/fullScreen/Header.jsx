@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { scrollDuration } from "../../../config/commonConfig";
 import { Tooltip } from "../../Tooltip";
+import { Basic } from "../../../util/User";
 
 const FullScreenHeader = ({ textWhite }) => {
   const [stickyHeader, setStickyHeader] = useState(false);
@@ -58,13 +59,17 @@ const FullScreenHeader = ({ textWhite }) => {
             />
           </Link>
           {/* Logo End */}
+
           <div
-            className={"text-3 ms-auto me-2 " + (textWhite ? "text-white" : "")}
+            className={
+              "text-3 ms-auto me-2 d-sm-block d-none" +
+              (textWhite ? "text-white" : "")
+            }
           >
             <span className="text-4 me-2">
-              <i className="fas fa-phone" />
+              <i className="fas fa-paper-plane" />
             </span>
-            (060) 444 434 444
+            <span>{Basic.email}</span>
           </div>
           <button
             className={
