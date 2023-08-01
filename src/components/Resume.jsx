@@ -1,5 +1,6 @@
 import React from "react";
-import resumeFile from "../documents/resume.pdf";
+import resumeFile from "../documents/AvishkaPrabath_CV.pdf";
+import { MySkills } from "../util/User";
 
 const Resume = () => {
   const educationDetails = [
@@ -121,19 +122,18 @@ const Resume = () => {
         {/* My Skills */}
         <h2 className="text-7 fw-600 mb-4 pb-2 mt-5 wow fadeInUp">My Skills</h2>
         <div className="row gx-5">
-          {skills.length > 0 &&
-            skills.map((skill, index) => (
+          {MySkills.length > 0 &&
+            MySkills.map((skill, index) => (
               <div className="col-md-6 wow fadeInUp" key={index}>
                 <p className="fw-500 text-start mb-2">
-                  {skill.name}{" "}
-                  <span className="float-end">{skill.percent}%</span>
+                  {skill.name} <span className="float-end">{skill.score}%</span>
                 </p>
                 <div className="progress progress-sm mb-4">
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: skill.percent + "%" }}
-                    aria-valuenow={skill.percent}
+                    style={{ width: skill.score + "%" }}
+                    aria-valuenow={skill.score}
                     aria-valuemin={0}
                     aria-valuemax={100}
                   />

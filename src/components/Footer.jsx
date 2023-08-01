@@ -1,4 +1,5 @@
 import React from "react";
+import { Basic } from "../util/User";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
             <p className="mb-2 mb-lg-0">
               Copyright © 2023{" "}
               <a className="fw-600" href="/">
-                Callum
+                {Basic.fname}
               </a>
               . All Rights Reserved.
             </p>
@@ -17,8 +18,8 @@ const Footer = () => {
           <div className="col-lg-6 wow fadeInUp">
             <p className="mb-0 text-center text-lg-end">
               Designed by{" "}
-              <a className="fw-600" href="https://www.harnishdesign.net/">
-                Harnish Design
+              <a className="fw-600" href="/">
+                {Basic.full_name}
               </a>
             </p>
           </div>
