@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
+import { Basic } from "../util/User";
+import { Social } from "../util/User";
 
 import "react-toastify/dist/ReactToastify.css";
 import { Tooltip } from "./Tooltip";
@@ -14,10 +16,10 @@ const Contact = () => {
     setSendingMail(true);
     emailjs
       .sendForm(
-        "service_i86k3ms",
-        "template_si6cin9",
+        "service_fq6pxj1",
+        "template_g2hqj2k",
         form.current,
-        "c9HsDgGF0tvWyVnAL"
+        "BBzrCkPeAWAT1tggn"
       )
       .then(
         (result) => {
@@ -64,16 +66,14 @@ const Contact = () => {
               first catch-up.
             </p>
             <h3 className="text-5 fw-600">Living In:</h3>
-            <address className="text-4">
-              30 Shacham street, Los Angeles, USA.
-            </address>
+            <address className="text-4">{Basic.Address}</address>
             <h3 className="text-5 fw-600">Call:</h3>
-            <p className="text-4">(+060) 444 434 444</p>
+            <p className="text-4">{Basic.phone}</p>
             <ul className="social-icons social-icons-lg justify-content-center justify-content-lg-start mt-5">
               <li className="social-icons-twitter">
                 <Tooltip text="Twitter" placement="top">
                   <a
-                    href="https://twitter.com/harnishdesign/"
+                    href={Social.twitter}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -84,7 +84,7 @@ const Contact = () => {
               <li className="social-icons-facebook">
                 <Tooltip text="Facebook" placement="top">
                   <a
-                    href="http://www.facebook.com/harnishdesign/"
+                    href={Social.facebook}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -95,7 +95,7 @@ const Contact = () => {
               <li className="social-icons-instagram">
                 <Tooltip text="Instagram" placement="top">
                   <a
-                    href="http://www.instagram.com/"
+                    href={Social.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -106,7 +106,7 @@ const Contact = () => {
               <li className="social-icons-github">
                 <Tooltip text="Github" placement="top">
                   <a
-                    href="http://www.github.com/"
+                    href={Social.github}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -117,7 +117,7 @@ const Contact = () => {
               <li className="social-icons-dribbble">
                 <Tooltip text="Dribbble" placement="top">
                   <a
-                    href="http://www.dribbble.com/harnishdesign/"
+                    href={Social.dribbble}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

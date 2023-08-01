@@ -15,6 +15,9 @@ export const Social = {
   linedin: "https://www.linkedin.com/in/avishkap",
   github: "https://github.com/avishka2k",
   facebook: "https://www.facebook.com/avishka2k",
+  instagram: "http://www.instagram.com/avishka2k",
+  twitter: "https://twitter.com/avishka2k",
+  dribbble: "http://www.dribbble.com/avishka2k/",
 };
 
 export const MySkills = [
