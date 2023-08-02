@@ -1,40 +1,7 @@
 import React from "react";
+import { MyServices } from "../util/User";
 
 const Services = () => {
-  // services details
-  const services = [
-    {
-      name: "Graphic Design",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.",
-      icon: "fas fa-palette",
-    },
-    {
-      name: "Web Design",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.",
-      icon: "fas fa-desktop",
-    },
-    {
-      name: "UI/UX Design",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.",
-      icon: "fas fa-pencil-ruler",
-    },
-    {
-      name: "App Design & Develop",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.",
-      icon: "fas fa-paint-brush",
-    },
-    {
-      name: "Business Analysis",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.",
-      icon: "fas fa-chart-area",
-    },
-    {
-      name: "SEO Marketing",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.",
-      icon: "fas fa-bullhorn",
-    },
-  ];
-
   return (
     <section id="services" className="section bg-light">
       <div className="container">
@@ -47,8 +14,8 @@ const Services = () => {
         </h2>
         {/* Heading end*/}
         <div className="row gy-5 mt-5">
-          {services.length > 0 &&
-            services.map((service, index) => (
+          {MyServices.length > 0 &&
+            MyServices.map((service, index) => (
               <div className="col-sm-6 col-lg-4 wow fadeInUp" key={index}>
                 <div className="featured-box text-center px-md-4">
                   <div className="featured-box-icon text-primary text-13">
