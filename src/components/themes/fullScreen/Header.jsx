@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { scrollDuration } from "../../../config/commonConfig";
 import { Tooltip } from "../../Tooltip";
-import { Basic } from "../../../util/User";
+import { Basic, Social } from "../../../util/User";
 
 const FullScreenHeader = ({ textWhite }) => {
   const [stickyHeader, setStickyHeader] = useState(false);
@@ -229,7 +229,7 @@ const FullScreenHeader = ({ textWhite }) => {
                 <li className="social-icons-twitter">
                   <Tooltip text="Twitter" placement="top">
                     <a
-                      href="https://twitter.com/harnishdesign/"
+                      href={Social.twitter}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -240,7 +240,7 @@ const FullScreenHeader = ({ textWhite }) => {
                 <li className="social-icons-facebook">
                   <Tooltip text="Facebook" placement="top">
                     <a
-                      href="http://www.facebook.com/harnishdesign/"
+                      href={Social.facebook}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -251,7 +251,7 @@ const FullScreenHeader = ({ textWhite }) => {
                 <li className="social-icons-instagram">
                   <Tooltip text="Instagram" placement="top">
                     <a
-                      href="http://www.instagram.com/"
+                      href={Social.instagram}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -262,7 +262,7 @@ const FullScreenHeader = ({ textWhite }) => {
                 <li className="social-icons-linkedin">
                   <Tooltip text="Linkedin" placement="top">
                     <a
-                      href="http://www.linkedin.com/"
+                      href={Social.linedin}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -273,7 +273,7 @@ const FullScreenHeader = ({ textWhite }) => {
                 <li className="social-icons-dribbble">
                   <Tooltip text="Dribbble" placement="top">
                     <a
-                      href="http://www.dribbble.com/harnishdesign/"
+                      href={Social.dribbble}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
