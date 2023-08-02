@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
 import { scrollDuration } from "../../../config/commonConfig";
-
+import { Basic } from "../../../util/User";
 const FullScreenDefaultIntro = () => {
   return (
     <section
@@ -13,18 +13,18 @@ const FullScreenDefaultIntro = () => {
         <div className="row">
           <div className="col-lg-7 text-center text-lg-start align-self-center order-1 order-lg-0 wow fadeIn">
             <h1 className="text-12 fw-300 mb-0 text-uppercase">
-              Hi, I'm a Freelancer
+              Hi, I'm Avishka
             </h1>
             <h2 className="text-21 fw-600 text-uppercase mb-0 ms-n1">
               <Typewriter
                 options={{
-                  strings: ["Designer", "Developer", "Callum"],
+                  strings: ["Designer", "Developer", "Operator"],
                   autoStart: true,
                   loop: true,
                 }}
               />
             </h2>
-            <p className="text-5">based in Los Angeles, USA.</p>
+            <p className="text-5">based in {Basic.Address}.</p>
             <Link
               className="btn btn-dark rounded-0 smooth-scroll mt-3"
               smooth="easeInOutQuint"
@@ -51,9 +51,9 @@ const FullScreenDefaultIntro = () => {
             <div className="bg-light rounded-pill d-inline-block p-3 shadow-lg wow zoomIn">
               <img
                 className="img-fluid rounded-pill d-block"
-                src="images/web-developer.jpg"
-                title="I'm Callum"
-                alt="I'm David"
+                src="https://avatars.githubusercontent.com/u/86360412?v=4"
+                title={`I'm ` + Basic.fname}
+                alt={`I'm ` + Basic.fname}
               />
             </div>
           </div>
